@@ -1,0 +1,83 @@
+CREATE TABLE [dbo].[Customers] (
+    [id]           INT          NULL,
+    [PartyName]    VARCHAR (40) NULL,
+    [PartyAddress] VARCHAR (40) NULL,
+    [PhoneNumber]  VARCHAR (40) NULL,
+    [Email]        VARCHAR (40) NULL,
+    [GSTIN]        VARCHAR (40) NULL
+);
+
+CREATE TABLE [dbo].[Supplier] (
+    [ID]      VARCHAR (40)  NULL,
+    [Name]    VARCHAR (40)  NULL,
+    [Address] VARCHAR (100) NULL,
+    [Phone]   VARCHAR (40)  NULL,
+    [GSTIN]   VARCHAR (20)  NULL
+);
+
+CREATE TABLE [dbo].[Items] (
+    [BillNumber]  INT           NULL,
+    [BillDate]    VARCHAR (50)  NULL,
+    [SNo]         INT           NULL,
+    [ProductName] VARCHAR (100) NULL,
+    [HSNCode]     VARCHAR (20)  NULL,
+    [Quantity]    INT           NULL,
+    [Unit]        VARCHAR (10)  NULL,
+    [Rate]        FLOAT (53)    NULL,
+    [Discount]    FLOAT (53)    NULL,
+    [Amount]      FLOAT (53)    NULL,
+    [GST]         FLOAT (53)    NULL,
+    [Total]       FLOAT (53)    NULL
+);
+
+CREATE TABLE [dbo].[Product] (
+    [SNO]            INT          NULL,
+    [ProductName]    VARCHAR (40) NULL,
+    [HSNCode]        VARCHAR (40) NULL,
+    [Quantity]       INT          NULL,
+    [Unit]           VARCHAR (20) NULL,
+    [Rate]           FLOAT (53)   NULL,
+    [Purchase_price] FLOAT (53)   NULL,
+    [Total]          FLOAT (53)   NULL,
+    [Dealer_Name]    VARCHAR (30) NULL
+);
+
+CREATE TABLE [dbo].[Purchase] (
+    [PartyName]    VARCHAR (20)  NULL,
+    [PartyAddress] VARCHAR (100) NULL,
+    [PhoneNumber]  VARCHAR (40)  NULL,
+    [GSTIN]        VARCHAR (20)  NULL,
+    [BillNumber]   INT           NULL,
+    [BillDate]     VARCHAR (50)  NULL,
+    [TotalAmount]  FLOAT (53)    NULL,
+    [BalanceDue]   FLOAT (53)    NULL
+);
+
+CREATE TABLE [dbo].[PurchaseItems] (
+    [BillNumber]  INT           NULL,
+    [BillDate]    VARCHAR (50)  NULL,
+    [SNo]         INT           NULL,
+    [ProductName] VARCHAR (100) NULL,
+    [HSNCode]     VARCHAR (20)  NULL,
+    [Quantity]    INT           NULL,
+    [Unit]        VARCHAR (10)  NULL,
+    [Rate]        FLOAT (53)    NULL,
+    [Discount]    FLOAT (53)    NULL,
+    [Amount]      FLOAT (53)    NULL,
+    [GST]         FLOAT (53)    NULL,
+    [Total]       FLOAT (53)    NULL
+);
+
+CREATE TABLE [dbo].[Sales] (
+    [PartyNAme]     VARCHAR (20) NULL,
+    [PartyAddress]  VARCHAR (40) NULL,
+    [PhoneNumber]   VARCHAR (40) NULL,
+    [GSTIN]         VARCHAR (20) NULL,
+    [BillNumber]    INT          NULL,
+    [YourGSTIN]     VARCHAR (20) NULL,
+    [BillDate]      VARCHAR (50) NULL,
+    [StateOfSupply] VARCHAR (20) NULL,
+    [TotalAmount]   FLOAT (53)   NULL,
+    [BalanceDue]    FLOAT (53)   NULL
+);
+

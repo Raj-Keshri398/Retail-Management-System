@@ -1,0 +1,250 @@
+﻿/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Form container styling */
+form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Customer management section */
+.customer-management {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.customer-management h2 {
+       margin: 0;
+       padding: 0;
+        text-align: center;
+        color: #335968;
+    }
+
+/* Heading styling */
+.customers-list h3 {
+    color: #990000;
+    margin-bottom: 20px;
+}
+
+
+.modal-content h3 {
+        margin: 0;
+        padding: 0;
+        color: #990000;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+/* Form row styling */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for labels and inputs */
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+.form-row label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    width: 100%;
+}
+
+/* Input field styling */
+.form-row .input {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 250px;
+    box-sizing: border-box;
+}
+
+/* Button container styling */
+
+/* General button styling */
+.button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Specific button stylings */
+.edit { background-color: #009900; color: #fff; }
+.add-item { background-color: #00cc00; color: #fff; }
+.clear { background-color: #888; color: #fff; }
+.delete { background-color: #922828; color: #fff; }
+.add { background-color: #257525; color: #fff; }
+.refresh { background-color: #42c3ab; color: #fff; }
+.refresh:hover { background-color: #1e4b5e; }
+
+/* Search box styling */
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.search-box .left-section,
+.search-box .right-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-box .asp-textboxx {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+}
+
+
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide default checkbox */
+.toggle-input {
+    display: none;
+}
+
+/* Slider styling */
+.slider {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color: #ccc;
+    border-radius: 34px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.4s;
+}
+
+/* Toggle the background and position when checked */
+.toggle-input:checked  .slider {
+    background-color: #2196F3;
+}
+
+.toggle-input:checked  .slider:before {
+    transform: translateX(26px);
+}
+
+
+
+
+/* GridView container styling */
+#GridView1 {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#GridView1 th, #GridView1 td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#GridView1 th {
+    background-color: #1e4b5e;
+    color: #fff;
+    font-weight: bold;
+}
+
+#GridView1 tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#GridView1 tr:hover {
+    background-color: #f1f1f1;
+}
+
+#GridView1 .select-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#GridView1 .select-button:hover {
+    background-color: #0056b3;
+}
+

@@ -1,0 +1,237 @@
+﻿
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+/* General styling for the body */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+/* Container styling */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+/* Header styling */
+.header {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #2c3657;
+    border-radius: 4px;
+    color: #fff;
+}
+
+/* Content section styling */
+.content {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Section styling */
+.section {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.section h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Form row styling for sections */
+.form-row {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex; /* Use flexbox for horizontal layout */
+    align-items: center; /* Center align items vertically */
+    margin-bottom: 5px; /* Space between rows */
+}
+
+/* Styling for labels inside sections */
+.section label {
+
+    width: 200px; /* Fixed width for labels */
+    margin-bottom: 0;
+    white-space: nowrap; /* Prevent label from wrapping */
+}
+
+/* Input styling */
+.input {
+    flex: 1; /* Allow input to take available space */
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+/* Form rows container styling */
+.form-rows {
+    display: flex; /* Align items in a row */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    gap: 20px; /* Space between form items */
+}
+
+/* Form item styling */
+.form-item {
+    flex: 1; /* Allow items to grow and shrink */
+    width: 200px; /* Ensure a minimum width for better alignment */
+    margin-bottom: 10px; /* Margin for spacing */
+}
+
+/* Styling for labels inside form items */
+.form-item label {
+    display: block;
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+/
+/* Smaller input styling */
+.input1 {
+    width: 70%; /* Adjust the width to be smaller */
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+/* Smaller input styling */
+.input1 {
+    width: 70%; /* Adjust the width to be smaller */
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+.button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #42c3ab;
+    color: #fff;
+    margin: 5px 0;
+}
+
+/* Specific button styles */
+.add {
+    background-color: #42c3ab;
+}
+
+.total {
+    background-color: #943b3b;
+}
+
+/* Amount section styling */
+.amount-section {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.amount-section label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.amount-section .input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+/* GridView container styling */
+#GridView1 {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#GridView1 th, #GridView1 td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#GridView1 th {
+    background-color: #1e4b5e;
+    color: #fff;
+    font-weight: bold;
+}
+
+#GridView1 tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#GridView1 tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Style for Font Awesome buttons in GridView */
+.fa-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Adjust size as needed */
+    color: #007bff; /* Change color as needed */
+    margin-right: 10px; /* Space between buttons */
+    padding: 5px;
+}
+
+.fa-button:hover {
+    color: #0056b3; /* Change color on hover */
+}
+
+/* Specific styles for delete and edit buttons */
+.delete .fa-trash {
+    color: #dc3545; /* Red color for delete */
+}
+
+.edit .fa-edit {
+    color: #28a745; /* Green color for edit */
+}
+
+/* Footer styling */
+.footer {
+    text-align: right;
+    margin-top: 20px;
+}

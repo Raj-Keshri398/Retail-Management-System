@@ -1,0 +1,123 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex: 1;
+}
+
+.main-container {
+    display: flex;
+    flex: 1;
+    height: 100%;
+}
+
+.sidebar {
+    width: 280px;
+    background-color: #474664;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #007700;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 15px 20px;
+    position: relative;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+
+.menu-item {
+    cursor: pointer;
+}
+
+.menu-item .dropdown {
+    margin-left: auto;
+}
+
+.sidebar ul li ul.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    padding-left: 20px;
+}
+
+.sidebar ul li:hover ul.submenu {
+    max-height: 200px; /* Adjust based on the number of submenu items */
+}
+
+.sidebar .logout {
+    background-color: #006600;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .logout i {
+    margin-right: 10px;
+}
+
+.main-content {
+    flex: 1;
+    margin-left: 280px; /* Adjust according to sidebar width */
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 280px); /* Adjust according to sidebar width */
+}
+
+iframe {
+    flex: 1;
+    border: none;
+    width: 100%;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+}
+
+.header h1 {
+    color: #009900;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}

@@ -1,0 +1,216 @@
+﻿/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: auto;
+    background-color: #f4f4f4;
+}
+
+/* Form container styling */
+form {
+    display: flex;
+    flex: 1;
+}
+
+/* Customer management section */
+.customer-management {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    height: 0 auto;
+    box-sizing:border-box;
+}
+
+/* Heading styling */
+.customer-management h2 {
+    color: #990000;
+    margin: 0 0 20px;
+}
+
+/* Input group styling */
+.input-group {
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+/* Form row styling */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for labels and inputs */
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+.input-group label {
+    margin-left: 20px;
+    font-weight: bold;
+    display: block; /* Ensure labels are block-level for proper spacing */
+}
+
+/* Input field styling */
+.input-group .input {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 250px; /* Make input fields full width within their grid cell */
+}
+
+/* Button container styling */
+.buttons {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+/* General button styling */
+.buttons .button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Edit button styling */
+.buttons .edit {
+    background-color: #009900;
+    color: #fff;
+}
+
+/* Add item button styling */
+.buttons .add-item {
+    background-color: #00cc00;
+    color: #fff;
+}
+
+/* Clear button styling */
+.buttons .clear {
+    background-color: #888;
+    color: #fff;
+}
+
+/* Refresh button styling */
+.buttons .refresh {
+    background-color: #296075;
+    color: #fff;
+}
+
+/* Refresh button hover effect */
+.buttons .refresh:hover {
+    background-color: #1e4b5e;
+}
+
+/* Search box styling */
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+/* Search box left section */
+.search-box .left-section {
+    display: flex;
+    align-items: center;
+}
+
+/* Search box right section */
+.search-box .right-section {
+    display: flex;
+    align-items: center;
+}
+
+/* Button within search box styling */
+.search-box .button {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-left: 5px;
+}
+
+/* Delete button styling */
+.search-box .delete {
+    background-color: #cc0000;
+    color: #fff;
+}
+
+/* Textbox styling within search box */
+.search-box .asp-textboxx {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px; /* Set a fixed width for consistency */
+}
+
+/* Refresh button styling in search box */
+.search-box .refresh {
+    background-color: #296075;
+    color: #fff;
+}
+
+/* Refresh button hover effect in search box */
+.search-box .refresh:hover {
+    background-color: #1e4b5e;
+}
+
+/* Customers list section */
+.customers-list h3 {
+    margin: 0 0 10px;
+}
+
+/* Customers list table styling */
+.customers-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Table header and data cell styling */
+.customers-list th,
+.customers-list td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Table header styling */
+.customers-list th {
+    background-color: #1e4b5e;
+}
+
+.customers-list td {
+    background-color: #eee;
+}
+
+
+  /* Button styling */
+        .button {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Specific button stylings */
+        .delete { background-color: #922828; color: #fff; }
+        .refresh { background-color: #42c3ab; color: #fff; }
+        .add { background-color: #257525; color: #fff; }
+
+        .button:hover {
+            opacity: 0.8;
+        }
+
+
+

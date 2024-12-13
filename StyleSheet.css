@@ -1,0 +1,40 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form-div {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0;
+}
+
+
+
+.form-div2 {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 0;
+}
+
+.auto-style1 {
+            width: 100%;
+        }
+
+.auto-style2 {
+            width: 161px;
+        }
+
+.auto-style3 {
+            width: 228px;
+        }
+
+.auto-style4 {
+            width: 151px;
+        }
+
