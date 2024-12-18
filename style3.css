@@ -1,0 +1,428 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(43, 31, 85);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 8px 3%;
+    background: #615e5e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    width: 100%;
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 45px;
+    transition: 0.3s;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+.navbar a:hover {
+    color: rgb(238, 111, 6);
+    transform: scale(1.1);
+}
+
+.home {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.div1 {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.div1 h2 {
+    margin-top: 50px;
+    color: #fff;
+}
+
+.div2-DashBorad {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin: 0 auto; /* Remove spacing issues */
+    width: 70%;
+    height: 450px;
+    background-color: #998686;
+    padding: 40px;
+    font-size: 13px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    box-shadow: 1px 1px 15px #012290f7, 1px 1px 10px #fff;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.div2-DashBorad:hover {
+    transform: translateY(-10px);
+}
+
+.div2-DashBorad .img {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+
+.div2-DashBorad .img img { 
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.div2-DashBorad .content {
+    width: 50%;
+    padding: 40px;
+}
+
+.div2-DashBorad .content h3 {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(61, 4, 28);
+}
+
+.div2-DashBorad .content button {
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 60px;
+    background-color: rgb(90, 85, 85);
+    color: rgb(7, 7, 7);
+    cursor: pointer;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.div2-DashBorad .content button:hover {
+    background-color: rgb(41, 40, 40);
+    color: #fff;
+    transition: 0.5s;
+}
+
+.about {
+    margin: 40px 0 0; /* Add space above About section */
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+
+.about-text {
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 70%;
+    height: 250px;
+    background-color: #998686;
+    padding: 50px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    box-shadow: 1px 1px 15px #012290f7, 1px 1px 10px #fff;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.about-text h2 {
+    color: rgb(61, 4, 28);
+    margin-bottom: 50px;
+}
+
+.about-text p{
+    font-style: italic;
+}
+    
+
+.about-text:hover {
+    transform: translateY(-10px);
+}
+
+
+.contact {
+    margin: 40px 0 0; /* Add space above About section */
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.contact-container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    background-color: #998686;
+    padding: 50px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    box-shadow: 1px 1px 15px #012290f7, 1px 1px 10px #fff;
+    transition: background 0.5s, transform 0.5s;
+    /* Centering items */
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.contact-container:hover {
+    transform: translateY(-10px);
+}
+
+.contact h2 {
+    color: rgb(61, 4, 28);
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.contact p {
+    font-style: italic;
+    color: rgb(44, 42, 42);
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    border: 2px solid #000;
+    background-color: #fff;
+    padding: 50px;
+    width: 50%;
+    height: auto;
+    border-radius: 16px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact-form .form-group label {
+    display: block;
+    font-weight: bold;
+    color: rgb(61, 4, 28);
+    margin-bottom: 5px;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group input:focus,
+.contact-form .form-group textarea:focus {
+    outline: none;
+    border-color: rgb(238, 111, 6);
+    box-shadow: 0 0 5px rgba(238, 111, 6, 0.5);
+}
+
+.contact-form .btn-submit {
+    background-color: rgb(90, 85, 85);
+    color: #000;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form .btn-submit:hover {
+    background-color: rgb(41, 40, 40);
+    color: #fff;
+}
+
+
+
+.footer {
+    width: 100%;
+    height: 49px;
+    background: #615e5e;
+    padding: 15px;
+    text-align: center;
+    margin: 0; /* Remove spacing */
+    position: relative;
+    bottom: 0;
+}
+
+.footer p {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    @media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #615e5e;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        display: none;
+    }
+        
+    .navbar.visible {
+        display: flex; /* Display when toggled */
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 25px;
+        color: #fff;
+        cursor: pointer;
+        margin-left: auto;
+        transition: color 0.3s;
+    }
+
+    .menu-toggle:hover {
+        color: rgb(238, 111, 6);
+    }
+
+    .home .div1 h2 {
+        margin-top: 10px;
+    }
+
+    /* Flexbox Issue Fix */
+    .div2-DashBorad {
+        flex-direction: column; /* Stack on small screens */
+        height: auto;
+        padding: 20px;
+        width: 90%; /* Allow slight breathing space */
+    }
+
+    .div2-DashBorad .img, .div2-DashBorad .content {
+        width: 100%; /* Full width for both sections */
+    }
+
+    .about {
+        flex-direction: column; /* Stack on small screens */
+        height: auto;
+        padding: 20px;
+        width: 100%; /* Allow slight breathing space */
+    }
+
+    .about .about-text {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    .about .about-text h2 {
+    
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    .contact-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    .div2-DashBorad {
+        width: 95%;
+    }
+    .contact h2 {
+        font-size: 20px;
+    }
+
+    .contact-form .form-group label {
+        font-size: 14px;
+    }
+
+    .contact-form .form-group input,
+    .contact-form .form-group textarea {
+        font-size: 14px;
+    }
+
+    .contact-form .btn-submit {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Welcome to Store Management System</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Store Management System</a>
+        <div class="menu-toggle">☰</div>
+        <nav class="navbar">
+            <a href="#home-content">Home</a>
+            <a href="#about-content">About</a>
+            <a href="AdminLogin.aspx">Admin</a>
+            <a href="AdminLogin.aspx">Login</a>
+            <a href="#contact-content">Contact</a>
+        </nav>
+    </header> 
+    <section class="home" id="home-content">
+        <div class="div1">
+            <h2>Welcome To Store Management System</h2>
+        </div>
+        <div class="div2-DashBorad">
+            <div class="img">
+                <img src="frontimage.png" alt="Front Image">
+            </div>
+            <div class="content">
+                <h3>Welcome to Retail Store Management System Dashboard</h3>
+                <button id="exploreBtn">Explore Here!</button>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about-content">
+        <div class="about-text">
+            <h2>Store Management System</h2>
+            <p>
+                Our Store Management System is designed to simplify inventory management, sales tracking, 
+                and customer handling. It’s a one-stop solution for managing retail operations efficiently.
+            </p>
+        </div>
+    </section>
+    <section class="contact" id="contact-content">
+        <div class="contact-container">
+            <h2>Get in touch</h2>
+            <p>If you have any questions, feel free to reach out to us. We'd love to hear from you!</p>
+            <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="64a41ed6-287b-4084-a33a-e932c1e53374">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>Thank you for exploring the site...</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButton = document.querySelector('.menu-toggle');
+            const navbar = document.querySelector('.navbar');
+            const div1 = document.querySelector('.div1');
+            const headerHeight = document.querySelector('.header').offsetHeight;
+
+            // Toggle menu on button click
+            toggleButton.addEventListener('click', () => {
+                navbar.classList.toggle('visible');
+                if (navbar.classList.contains('visible')) {
+                    const navbarHeight = navbar.scrollHeight;
+                    div1.style.marginTop = `${headerHeight + navbarHeight}px`;
+                } else {
+                    div1.style.marginTop = `${headerHeight}px`;
+                }
+            });
+
+            // Redirect to AdminLogin.aspx when the "Explore Here!" button is clicked
+            const exploreBtn = document.querySelector('#exploreBtn');
+            exploreBtn.addEventListener('click', function () {
+                window.location.href = 'AdminLogin.aspx';
+            });
+        });
+    </script>
+        
+</body>
+</html>
